@@ -1,0 +1,28 @@
+name: Feature request
+description: Suggest an idea for Naghma
+title: "[feat] "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      placeholder: When I download a playlist, the tracks keep the video titles...
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+    validations:
+      required: false
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Where does it belong?
+      options:
+        - Free core
+        - Pro
+        - Not sure
+    validations:
+      required: true

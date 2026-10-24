@@ -1,0 +1,75 @@
+{
+  "_rtl": true,
+  "app.title": "نغمة",
+  "tab.download": "تحميل",
+  "tab.sites": "المواقع",
+  "tab.settings": "الإعدادات",
+
+  "lbl.input": "رابط أو بحث — سطر واحد لكل عنصر (Ctrl+Enter للبدء)",
+  "lbl.format": "الصيغة",
+  "lbl.output": "مجلد الحفظ",
+  "lbl.result": "النتيجة رقم",
+
+  "btn.download": "تحميل",
+  "btn.stop": "إيقاف",
+  "btn.open": "فتح المجلد",
+  "btn.update": "تحديث المحرك",
+  "btn.browse": "اختيار…",
+
+  "chk.playlist": "قائمة التشغيل كاملة",
+
+  "fmt.mp3": "صوت — MP3 (أفضل جودة)",
+  "fmt.m4a": "صوت — M4A (آيفون)",
+  "fmt.opus": "صوت — OPUS",
+  "fmt.flac": "صوت — FLAC (بدون ضغط)",
+  "fmt.video": "فيديو — MP4 (الأفضل)",
+  "fmt.1080": "فيديو — MP4 1080p",
+  "fmt.720": "فيديو — MP4 720p",
+  "fmt.2160": "فيديو — MP4 4K",
+
+  "status.ready": "جاهز",
+  "status.working": "جارٍ التحميل…",
+  "status.preparing": "تحضير المحرك…",
+  "status.sites": "تحميل قائمة المواقع…",
+  "status.done": "انتهى — نجح {0} · فشل {1}",
+  "status.item": "[{0}/{1}] {2}",
+
+  "log.hello": "الصق رابطاً (يوتيوب، ساوندكلاود، تيك توك…) أو اكتب اسم الأغنية.",
+  "log.engine": "المحرك",
+  "log.output": "الحفظ في",
+  "log.ok": "تم",
+  "log.fail": "فشل",
+  "log.stopped": "تم الإيقاف",
+  "log.exists": "موجود مسبقاً في المكتبة",
+
+  "sites.filter": "تصفية",
+  "sites.popular": "الأشهر",
+  "sites.count": "{0} موقعاً",
+  "sites.loading": "جارٍ التحميل…",
+
+  "err.empty": "الصق رابطاً أو اكتب اسم الأغنية.",
+  "err.engine": "المحرك غير جاهز. تحقق من الاتصال وحاول مرة أخرى.",
+  "err.title": "نغمة",
+
+  "pro.title": "نغمة Pro",
+  "pro.body": "يفتح Pro: قائمة انتظار متعددة، قوائم التشغيل والألبومات، فيديو 1080p/4K، ترتيب تلقائي Artist/Album، وكشف المكرر.\n\nدفعة واحدة. يعمل دون إنترنت. مدى الحياة.",
+  "pro.button": "فتح Pro — 12$",
+  "pro.later": "ليس الآن",
+  "pro.locked": "Pro",
+  "pro.thanks": "شكراً لك! تم تفعيل نغمة Pro.",
+
+  "set.language": "اللغة",
+  "set.organize": "ترتيب Artist/Album/01 - Title (Pro)",
+  "set.dedupe": "تخطي الملفات الموجودة",
+  "set.theme": "الوضع الداكن",
+  "set.license": "مفتاح الترخيص",
+  "set.activate": "تفعيل",
+  "set.about": "حول",
+  "set.about.body": "نغمة {0}\nنسخة محمولة — بدون تثبيت.\n\nالمحرك: yt-dlp + FFmpeg محلياً.\nنغمة لا تستضيف أو توزع أي محتوى.",
+  "set.activated": "تم التفعيل لـ {0}",
+  "set.badkey": "المفتاح غير صالح.",
+
+  "dlg.folder": "اختر مجلد الحفظ",
+  "dlg.on": "مفعّل",
+  "dlg.off": "معطّل"
+}

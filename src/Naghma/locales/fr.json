@@ -1,0 +1,75 @@
+{
+  "_rtl": false,
+  "app.title": "Naghma",
+  "tab.download": "Télécharger",
+  "tab.sites": "Sites",
+  "tab.settings": "Réglages",
+
+  "lbl.input": "Lien ou recherche — un par ligne (Ctrl+Entrée pour lancer)",
+  "lbl.format": "Format",
+  "lbl.output": "Dossier de sortie",
+  "lbl.result": "Résultat n°",
+
+  "btn.download": "Télécharger",
+  "btn.stop": "Stop",
+  "btn.open": "Ouvrir le dossier",
+  "btn.update": "Mettre à jour",
+  "btn.browse": "Parcourir…",
+
+  "chk.playlist": "Playlist complète",
+
+  "fmt.mp3": "Audio — MP3 (qualité max)",
+  "fmt.m4a": "Audio — M4A (iPhone)",
+  "fmt.opus": "Audio — OPUS",
+  "fmt.flac": "Audio — FLAC (sans perte)",
+  "fmt.video": "Vidéo — MP4 (meilleure)",
+  "fmt.1080": "Vidéo — MP4 1080p",
+  "fmt.720": "Vidéo — MP4 720p",
+  "fmt.2160": "Vidéo — MP4 4K",
+
+  "status.ready": "Prêt",
+  "status.working": "Téléchargement…",
+  "status.preparing": "Préparation du moteur…",
+  "status.sites": "Chargement des sites…",
+  "status.done": "Terminé — OK {0} · échec {1}",
+  "status.item": "[{0}/{1}] {2}",
+
+  "log.hello": "Colle un lien (YouTube, SoundCloud, TikTok…) ou tape un nom de chanson.",
+  "log.engine": "Moteur",
+  "log.output": "Sortie",
+  "log.ok": "OK",
+  "log.fail": "ÉCHEC",
+  "log.stopped": "arrêté",
+  "log.exists": "déjà dans la bibliothèque",
+
+  "sites.filter": "Filtrer",
+  "sites.popular": "Populaires",
+  "sites.count": "{0} sites",
+  "sites.loading": "Chargement…",
+
+  "err.empty": "Colle un lien ou tape un nom de chanson.",
+  "err.engine": "Le moteur n'est pas prêt. Vérifie la connexion.",
+  "err.title": "Naghma",
+
+  "pro.title": "Naghma Pro",
+  "pro.body": "Pro débloque : file d'attente multiple, playlists et albums, vidéo 1080p/4K, rangement Artist/Album et détection des doublons.\n\nUn seul paiement. Hors ligne. À vie.",
+  "pro.button": "Débloquer Pro — 12 $",
+  "pro.later": "Plus tard",
+  "pro.locked": "Pro",
+  "pro.thanks": "Merci ! Naghma Pro est activé.",
+
+  "set.language": "Langue",
+  "set.organize": "Ranger en Artist/Album/01 - Title (Pro)",
+  "set.dedupe": "Ignorer les fichiers déjà présents",
+  "set.theme": "Thème sombre",
+  "set.license": "Clé de licence",
+  "set.activate": "Activer",
+  "set.about": "À propos",
+  "set.about.body": "Naghma {0}\nVersion portable — sans installation.\n\nMoteur : yt-dlp + FFmpeg en local.\nNaghma n'héberge aucun contenu.",
+  "set.activated": "Pro activé pour {0}",
+  "set.badkey": "Clé invalide.",
+
+  "dlg.folder": "Choisir le dossier de sortie",
+  "dlg.on": "activé",
+  "dlg.off": "désactivé"
+}

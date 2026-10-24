@@ -1,0 +1,25 @@
+# Build output
+bin/
+obj/
+publish/
+dist/
+*.user
+*.suo
+.vs/
+
+# Bundled engine binaries (downloaded at first run / by scripts/fetch-tools.ps1)
+tools/bin/
+src/Naghma/Resources/yt-dlp.exe
+src/Naghma/Resources/ffmpeg.exe
+
+# Local settings / licenses
+*.local.json
+license.key
+
+# Private seller tools (licence key signing key, issue script)
+private/
+
+# OS
+Thumbs.db
+.DS_Store
+desktop.ini

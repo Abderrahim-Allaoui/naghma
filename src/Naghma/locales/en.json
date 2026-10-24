@@ -1,0 +1,75 @@
+{
+  "_rtl": false,
+  "app.title": "Naghma",
+  "tab.download": "Download",
+  "tab.sites": "Sites",
+  "tab.settings": "Settings",
+
+  "lbl.input": "Link or search — one per line (Ctrl+Enter to start)",
+  "lbl.format": "Format",
+  "lbl.output": "Output folder",
+  "lbl.result": "Result #",
+
+  "btn.download": "Download",
+  "btn.stop": "Stop",
+  "btn.open": "Open folder",
+  "btn.update": "Update engine",
+  "btn.browse": "Browse…",
+
+  "chk.playlist": "Full playlist",
+
+  "fmt.mp3": "Audio — MP3 (best quality)",
+  "fmt.m4a": "Audio — M4A (iPhone)",
+  "fmt.opus": "Audio — OPUS",
+  "fmt.flac": "Audio — FLAC (lossless)",
+  "fmt.video": "Video — MP4 (best)",
+  "fmt.1080": "Video — MP4 1080p",
+  "fmt.720": "Video — MP4 720p",
+  "fmt.2160": "Video — MP4 4K",
+
+  "status.ready": "Ready",
+  "status.working": "Downloading…",
+  "status.preparing": "Preparing engine…",
+  "status.sites": "Loading site list…",
+  "status.done": "Done — OK {0} · failed {1}",
+  "status.item": "[{0}/{1}] {2}",
+
+  "log.hello": "Paste a link (YouTube, SoundCloud, TikTok…) or type a song name.",
+  "log.engine": "Engine",
+  "log.output": "Output",
+  "log.ok": "OK",
+  "log.fail": "FAILED",
+  "log.stopped": "stopped by user",
+  "log.exists": "already in the library",
+
+  "sites.filter": "Filter",
+  "sites.popular": "Popular",
+  "sites.count": "{0} sites",
+  "sites.loading": "Loading…",
+
+  "err.empty": "Paste a link or type a song name.",
+  "err.engine": "The engine is not ready yet. Check your connection and try again.",
+  "err.title": "Naghma",
+
+  "pro.title": "Naghma Pro",
+  "pro.body": "Pro unlocks the batch queue, playlists and albums, 1080p/4K video, automatic Artist/Album folders and duplicate detection.\n\nOne payment. Works offline. Lifetime.",
+  "pro.button": "Unlock Pro — $12",
+  "pro.later": "Not now",
+  "pro.locked": "Pro",
+  "pro.thanks": "Thank you! Naghma Pro is now active.",
+
+  "set.language": "Language",
+  "set.organize": "Organize as Artist/Album/01 - Title (Pro)",
+  "set.dedupe": "Skip files already in the library",
+  "set.theme": "Dark theme",
+  "set.license": "License key",
+  "set.activate": "Activate",
+  "set.about": "About",
+  "set.about.body": "Naghma {0}\nPortable build — no installer, no registry keys.\n\nEngine: yt-dlp + FFmpeg, running locally.\nNaghma does not host or distribute any media.",
+  "set.activated": "Pro activated for {0}",
+  "set.badkey": "This key is not valid.",
+
+  "dlg.folder": "Choose output folder",
+  "dlg.on": "on",
+  "dlg.off": "off"
+}

@@ -1,0 +1,54 @@
+name: Bug report
+description: Something does not work as expected
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the report. Please include the **log panel output** — without it we usually cannot reproduce.
+  - type: input
+    id: version
+    attributes:
+      label: Naghma version
+      description: Settings → About
+      placeholder: 0.1.0
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: URL or search term
+      description: What were you downloading? (it is fine to redact parts)
+    validations:
+      required: true
+  - type: dropdown
+    id: format
+    attributes:
+      label: Output format
+      options: [MP3, M4A, OPUS, FLAC, MP4 720p, MP4 1080p, MP4 4K]
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Open the Download tab
+        2. Paste ...
+        3. Click Download
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: Log output
+      description: Copy the last ~30 lines from the log panel.
+      render: text
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Windows version
+      placeholder: Windows 11 23H2
