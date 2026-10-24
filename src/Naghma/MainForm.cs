@@ -602,6 +602,7 @@ public sealed class MainForm : Form
             if (e.Kind == EngineKind.Progress)
             {
                 _progress.Value = Math.Clamp(e.Percent, 0, 100);
+                SetStatus($"{Loc.T("status.working")} {e.Percent}%");
                 return;
             }
 
@@ -835,7 +836,7 @@ public sealed class MainForm : Form
 
         _log.SelectionStart = _log.TextLength;
         _log.SelectionLength = 0;
-        _log.SelectionColor = color ?? Theme.Text;
+        _log.SelectionColor = color is null ? Theme.LogText : Theme.ForLog(color.Value);
         _log.AppendText("  " + text + Environment.NewLine);
         _log.SelectionColor = _log.ForeColor;
         _log.ScrollToCaret();

@@ -31,7 +31,27 @@ public static class Theme
     public static Color Border { get; private set; } = Color.FromArgb(226, 227, 234);
     public static Color LogBg { get; private set; } = Color.FromArgb(22, 22, 27);
 
+    // the log is a dark terminal in both themes, so it needs its own palette
+    public static Color LogText { get; private set; } = Color.FromArgb(226, 226, 235);
+    public static Color LogMuted { get; private set; } = Color.FromArgb(148, 155, 168);
+    public static Color LogAccent { get; private set; } = Color.FromArgb(167, 139, 250);
+    public static Color LogOk { get; private set; } = Color.FromArgb(74, 222, 128);
+    public static Color LogWarn { get; private set; } = Color.FromArgb(251, 191, 36);
+    public static Color LogError { get; private set; } = Color.FromArgb(248, 113, 113);
+
     public static bool IsDark { get; private set; }
+
+    /// <summary>Maps a UI colour to its readable counterpart on the dark log surface.</summary>
+    public static Color ForLog(Color c)
+    {
+        if (c == Text) return LogText;
+        if (c == Muted) return LogMuted;
+        if (c == Accent) return LogAccent;
+        if (c == Ok) return LogOk;
+        if (c == Warn) return LogWarn;
+        if (c == Error) return LogError;
+        return c;
+    }
 
     public static void Apply(Form form, bool dark)
     {
@@ -49,6 +69,8 @@ public static class Theme
             Card = Color.FromArgb(31, 31, 38);
             Border = Color.FromArgb(52, 52, 62);
             LogBg = Color.FromArgb(15, 15, 19);
+            LogText = Color.FromArgb(232, 232, 240);
+            LogMuted = Color.FromArgb(156, 163, 175);
         }
         else
         {
@@ -62,6 +84,8 @@ public static class Theme
             Card = Color.White;
             Border = Color.FromArgb(226, 227, 234);
             LogBg = Color.FromArgb(22, 22, 27);
+            LogText = Color.FromArgb(226, 226, 235);
+            LogMuted = Color.FromArgb(148, 155, 168);
         }
 
         form.BackColor = Bg;
