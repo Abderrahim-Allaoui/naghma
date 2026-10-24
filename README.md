@@ -10,6 +10,11 @@ everything under `Artist / Album / 01 - Title`. No browser, no ads, no command l
   <img src="assets/screenshot-download.png" width="820" alt="Naghma - Download tab">
 </p>
 
+<p align="center">
+  <a href="assets/demo.mp4"><img src="assets/cover.png" width="820" alt="Watch the 23-second demo"></a>
+  <br><sub><b>▶ 23-second demo</b> — paste a name, press Download, the file lands tagged (download plays 3× faster)</sub>
+</p>
+
 ---
 
 ## Why another downloader?
@@ -30,7 +35,7 @@ Because most of them stop at "download". Naghma is a **library tool**:
 
 ## Free vs Pro
 
-| Feature | Free | Pro ($12, one-time) |
+| Feature | Free | Pro ($6, one-time) |
 |---|:--:|:--:|
 | Download from 1,750+ sites | ✅ | ✅ |
 | MP3 / M4A / OPUS / FLAC | ✅ | ✅ |
@@ -46,6 +51,8 @@ Because most of them stop at "download". Naghma is a **library tool**:
 | Priority support | – | ✅ |
 
 No subscription. One key, works offline, valid forever.
+
+**[Get Pro — $6](https://abderrahim-allaoui.github.io/naghma/#pricing)** · [What Pro adds](https://abderrahim-allaoui.github.io/naghma/#pricing)
 
 ---
 

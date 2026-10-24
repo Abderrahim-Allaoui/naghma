@@ -1,10 +1,24 @@
 using System.Drawing;
+using System.Runtime.InteropServices;
 
 namespace Naghma;
 
 /// <summary>Single source of truth for colours. Apply() walks the control tree.</summary>
 public static class Theme
 {
+    // Windows 10 1809+ / 11 dark title bar. 20 is the documented attribute, 19 the pre-20H1 one.
+    [DllImport("dwmapi.dll", PreserveSig = true)]
+    private static extern int DwmSetWindowAttribute(IntPtr hwnd, int attr, ref int value, int size);
+
+    private static void PaintTitleBar(Form form, bool dark)
+    {
+        if (!OperatingSystem.IsWindowsVersionAtLeast(10, 0, 17763)) return;
+
+        int on = dark ? 1 : 0;
+        if (DwmSetWindowAttribute(form.Handle, 20, ref on, sizeof(int)) != 0)
+            DwmSetWindowAttribute(form.Handle, 19, ref on, sizeof(int));
+    }
+
     public static Color Text { get; private set; } = Color.FromArgb(31, 36, 48);
     public static Color Muted { get; private set; } = Color.FromArgb(107, 114, 128);
     public static Color Accent { get; private set; } = Color.FromArgb(109, 40, 217);
@@ -52,6 +66,7 @@ public static class Theme
 
         form.BackColor = Bg;
         form.ForeColor = Text;
+        PaintTitleBar(form, dark);
 
         foreach (Control c in form.Controls) Paint(c);
         form.Invalidate(true);
@@ -64,6 +79,7 @@ public static class Theme
             case RichTextBox rtb:
                 rtb.BackColor = LogBg;
                 rtb.ForeColor = Color.FromArgb(214, 214, 222);
+                rtb.BorderStyle = BorderStyle.None;
                 return;
 
             case TabPage page:
@@ -118,7 +134,12 @@ public static class Theme
                 return;
 
             case ProgressBar _:
-            case StatusStrip _:
+                return;
+
+            case StatusStrip ss:
+                ss.BackColor = Card;
+                ss.ForeColor = Text;
+                foreach (ToolStripItem item in ss.Items) item.ForeColor = Text;
                 return;
         }
 

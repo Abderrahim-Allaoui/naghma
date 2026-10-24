@@ -17,7 +17,7 @@ business side: how a payment turns into an activated copy.
 | `Artist/Album/Title` organizing | – | ✅ |
 | Duplicate detection | – | ✅ |
 
-**Price: $12 one-time.** One key, offline, no expiry. No subscription — that is the
+**Price: $6 one-time.** One key, offline, no expiry. No subscription — that is the
 selling point against every SaaS in this niche.
 
 ---
@@ -52,7 +52,7 @@ the four in practice.
 
 ### Automating key delivery
 
-1. Create the product on Gumroad, price $12.
+1. Create the product on Gumroad, price $6.
 2. Add a "content" field telling the buyer they will receive a key by email within 24 h.
 3. When an order arrives, run `LicenseTool issue <email>` and reply.
 4. At >10 sales/day, script it: Gumroad `sale` webhook → run `LicenseTool` → email the key.
@@ -68,13 +68,33 @@ the four in practice.
 > under `Artist / Album / Title`. Batch a whole playlist, skip what you already own,
 > export an M3U to your phone.
 >
-> Free forever for single downloads. **Pro is $12 once** — batch queue, playlists,
+> Free forever for single downloads. **Pro is $6 once** — batch queue, playlists,
 > 1080p/4K, auto-organising, duplicate detection. No subscription, no account,
 > works offline, one key for life.
 >
 > Windows 10/11 · portable · no installer · English / العربية / Français
 
 Screenshots: `assets/screenshot-download.png`, `assets/screenshot-sites.png`.
+Cover art: `assets/cover.png` (1280×720), social card: `assets/og.png` (1200×630).
+
+### Gumroad fields, exactly
+
+| Field | Value |
+|---|---|
+| Name | `Naghma Pro` |
+| Price | `$6` (one-time, no "pay what you want") |
+| URL slug | `naghma` → `gumroad.com/l/naghma` |
+| Cover | `assets/cover.png` |
+| Summary | `Batch downloads, playlists, 4K and auto-organising for Naghma. One key, offline, lifetime.` |
+| Tags | `music`, `youtube`, `downloader`, `mp3`, `windows`, `productivity` |
+| Category | Software / Productivity |
+| Call-to-action button | `Get the key` |
+| Content / receipt note | `Your key arrives by email within 24 h. Keep it: it works offline, forever, on every PC you own.` |
+| Refund policy | `14 days, no questions` |
+
+The "buy" button on the landing page points at `https://gumroad.com/l/naghma` — once the
+product exists at that slug, nothing else needs changing. If you pick another slug, search
+`gumroad.com/l/` in `index.html` (one line) and in `AppSettings.ProUrl` (one line).
 
 ---
 
@@ -92,7 +112,7 @@ The GitHub repo is the funnel, not the store. Realistic channels, in order of ef
 5. **Arabic content** — nobody covers this niche in Arabic. A darija/عربية video is the
    cheapest differentiation you have.
 
-Expected reality: **10-50 sales/month at $12 = $120-600/month**, and only with consistent
+Expected reality: **10-50 sales/month at $6 = $60-300/month**, and only with consistent
 posting. Without marketing the number is zero, regardless of how good the app is.
 
 ---
@@ -112,8 +132,9 @@ Keep an FAQ in the repo and link it from the store page — it removes ~half the
 
 ## 6. Before the first sale
 
-- [ ] Back up `private/private-key.txt` somewhere offline.
-- [ ] Bump `Version` in `Naghma.csproj`, update `CHANGELOG.md`, tag `vX.Y.Z`.
-- [ ] Set `ProUrl` in `AppSettings` to the real store URL (it defaults to the repo).
+- [x] Back up `private/private-key.txt` somewhere offline (`E:\Backups\Naghma\`, fingerprint in `KEY-FINGERPRINT.txt`).
+- [x] Set `ProUrl` in `AppSettings` to the live site.
+- [ ] Create the Gumroad product with the fields above, then replace `gumroad.com/l/naghma` if the slug differs.
 - [ ] Test one key end-to-end: issue → activate → Pro features unlocked → restart keeps Pro.
+- [ ] Bump `Version` in `Naghma.csproj`, update `CHANGELOG.md`, tag `vX.Y.Z`.
 - [ ] Put the store link in the README, the repo description and the release notes.
