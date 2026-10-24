@@ -744,7 +744,20 @@ public sealed class MainForm : Form
     private void ShowPro()
     {
         var text = Loc.T("pro.body") + Environment.NewLine + Environment.NewLine + Loc.T("pro.button");
-        MessageBox.Show(this, text, Loc.T("pro.title"), MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        var answer = MessageBox.Show(this, text, Loc.T("pro.title"),
+            MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+
+        if (answer != DialogResult.Yes || string.IsNullOrWhiteSpace(_settings.ProUrl)) return;
+
+        try
+        {
+            Process.Start(new ProcessStartInfo(_settings.ProUrl) { UseShellExecute = true });
+        }
+        catch (Exception ex)
+        {
+            Log(ex.Message, Theme.Error);
+        }
     }
 
     // ---------------------------------------------------------------- sites
