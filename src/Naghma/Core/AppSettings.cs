@@ -12,7 +12,7 @@ public sealed class AppSettings
     public bool Dedupe { get; set; } = true;
     public bool DarkTheme { get; set; }
     public bool Verbose { get; set; }
-    public string ProUrl { get; set; } = "https://github.com/Abderrahim-Allaoui/naghma#free-vs-pro";
+    public string ProUrl { get; set; } = "https://abderrahim-allaoui.github.io/naghma/#pricing";
     public string LicenseKey { get; set; } = "";
     public int WindowWidth { get; set; } = 940;
     public int WindowHeight { get; set; } = 700;
