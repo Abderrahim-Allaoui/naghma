@@ -83,7 +83,11 @@ Cover art: `assets/cover.png` (1280×720), social card: `assets/og.png` (1200×6
 |---|---|
 | Name | `Naghma Pro` |
 | Price | `$6` (one-time, no "pay what you want") |
-| URL slug | `naghma` → `gumroad.com/l/naghma` |
+| URL slug | `naghma-pro` → `gumroad.com/l/naghma-pro` |
+
+> The slug `naghma` is already taken on your own seller account by the **Naghma Font**
+> product (`arendxstd.gumroad.com/l/naghma`), so the app needs its own slug. `naghma-pro`
+> was free when this was written.
 | Cover | `assets/cover.png` |
 | Summary | `Batch downloads, playlists, 4K and auto-organising for Naghma. One key, offline, lifetime.` |
 | Tags | `music`, `youtube`, `downloader`, `mp3`, `windows`, `productivity` |
@@ -92,9 +96,10 @@ Cover art: `assets/cover.png` (1280×720), social card: `assets/og.png` (1200×6
 | Content / receipt note | `Your key arrives by email within 24 h. Keep it: it works offline, forever, on every PC you own.` |
 | Refund policy | `14 days, no questions` |
 
-The "buy" button on the landing page points at `https://gumroad.com/l/naghma` — once the
-product exists at that slug, nothing else needs changing. If you pick another slug, search
-`gumroad.com/l/` in `index.html` (one line) and in `AppSettings.ProUrl` (one line).
+The "buy" button on the landing page points at `https://arendxstd.gumroad.com/l/naghma-pro` —
+that product does not exist yet, so the button is a 404 until you create it. Do not post the
+launch links before that step. If you end up with another slug, search `gumroad.com/l/` in
+`index.html` (one line).
 
 ---
 
