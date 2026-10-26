@@ -11,8 +11,8 @@ everything under `Artist / Album / 01 - Title`. No browser, no ads, no command l
 </p>
 
 <p align="center">
-  <a href="assets/demo.mp4"><img src="assets/cover.png" width="820" alt="Watch the 23-second demo"></a>
-  <br><sub><b>▶ 23-second demo</b> — paste a name, press Download, the file lands tagged (download plays 3× faster)</sub>
+  <a href="assets/demo.mp4"><img src="assets/cover.png" width="820" alt="Watch the 19-second demo"></a>
+  <br><sub><b>▶ 19-second demo</b> — paste a name, press Download, the file lands tagged</sub>
 </p>
 
 ---
