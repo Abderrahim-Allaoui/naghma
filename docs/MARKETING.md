@@ -1,7 +1,7 @@
 # Launch copy — ready to post
 
 Everything below is written to be pasted as-is. The asset for every channel is
-`assets/demo.mp4` (23 s, 1280×720) plus the three screenshots.
+`assets/demo.mp4` (**18.5 s**, 1280×720) plus the three screenshots.
 
 Landing page: https://abderrahim-allaoui.github.io/naghma/
 Download: https://github.com/Abderrahim-Allaoui/naghma/releases/latest
@@ -17,16 +17,18 @@ in the first 1.5 s — no logo intro.
 **Hook (text on screen, 0-2 s):**
 > Your MP3 folder is a mess. Watch this.
 
-**Script (voice-over or captions, ~25 s):**
+**Script (voice-over or captions, 18.5 s):**
 
-| Time | On screen | Caption |
+The clip is already cut with burned-in captions — for voice-over, match these beats:
+
+| Time | On screen | Caption / voice |
 |---|---|---|
-| 0-3 s | the messy folder | "4,000 files, no tags, no covers" |
-| 3-8 s | paste a name, hit Download | "paste the song name" |
-| 8-14 s | log running | "it finds, downloads, tags, covers" |
-| 14-18 s | file in `E:\Music` | "file lands as Artist - Title.mp3" |
-| 18-23 s | Sites tab | "1,750 sites, not just YouTube" |
-| 23-28 s | pricing card | "free. Pro is $6 if you want batch + 4K" |
+| 0-2.6 s | intro card | (hook — say it over the card) |
+| 2.6-6.5 s | paste a name, hit Download | "paste the song name, no link needed" |
+| 6.5-11 s | log running (sped up) | "it finds, downloads, tags, embeds the cover" |
+| 11-14 s | file lands in the output folder | "file lands as Artist - Title.mp3" |
+| 14-15.3 s | Sites tab | "1,750 sites, not just YouTube" |
+| 15.3-18.5 s | outro card | "free. Pro is $6 if you want batch + 4K" |
 
 **Caption:**
 > Naghma — download, tag and organize your music library. Free for Windows, link in bio.
