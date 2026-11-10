@@ -147,6 +147,7 @@ Keep an FAQ in the repo and link it from the store page — it removes ~half the
       GUI activation still needs one real purchase to confirm visually.
 - [x] Bumped `Version` to 0.1.2, rewrote `CHANGELOG.md`, tagged `v0.1.2` — CI published
       `Naghma-win-x64.zip`; local install refreshed at `E:\Apps\Naghma`.
-- [x] Store link in the README (via the site's `#pricing` section, which holds the buy button).
-- [ ] Put the store link in the GitHub repo description and the release notes body.
+- [x] Store link in the README (via the site's `#pricing` section, which holds the buy button)
+      and in the GitHub repo description.
+- [ ] Put the store link in the release notes body of the next tag.
 - [ ] One real $6 purchase end-to-end (100 % discount code) → key → activate in the GUI.
