@@ -9,7 +9,7 @@
     <AssemblyName>Naghma</AssemblyName>
     <RootNamespace>Naghma</RootNamespace>
     <ApplicationIcon>Resources\icon.ico</ApplicationIcon>
-    <Version>0.1.1</Version>
+    <Version>0.1.2</Version>
     <Authors>Abderrahim Allaoui</Authors>
     <Product>Naghma</Product>
     <Company>Naghma</Company>
