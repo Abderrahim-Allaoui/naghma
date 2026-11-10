@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">نغمة</string>
+    <string name="tagline">الصق رابطًا أو اكتب اسم الأغنية</string>
+    <string name="hint_input">رابط أو اسم الأغنية — واحد في كل سطر</string>
+    <string name="format">الصيغة</string>
+    <string name="download">تنزيل</string>
+    <string name="stop">إيقاف</string>
+    <string name="ready">جاهز</string>
+    <string name="preparing">تحضير المحرّك…</string>
+    <string name="downloading">جارٍ التنزيل…</string>
+    <string name="done">تم — %1$s</string>
+    <string name="open">فتح</string>
+    <string name="share">مشاركة</string>
+
+    <string name="pro_title">نغمة برو</string>
+    <string name="pro_sub">قائمة دفعية · FLAC و4K · ترتيب تلقائي · بلا إعلانات</string>
+    <string name="pro_watch">شاهد إعلانًا — 24 ساعة برو</string>
+    <string name="pro_buy">اشترِ برو — 6$</string>
+    <string name="pro_active">برو مُفعّل</string>
+    <string name="pro_reward_ok">تم تفعيل برو لمدة 24 ساعة. شكرًا لك!</string>
+    <string name="pro_reward_failed">لا يوجد إعلان متاح الآن. حاول بعد دقيقة.</string>
+    <string name="pro_needs">هذه ميزة برو</string>
+    <string name="pro_needs_body">شاهد إعلانًا قصيرًا لتفعيل برو 24 ساعة، أو اشترِ مفتاحًا مرة واحدة للأبد.</string>
+    <string name="pro_key_hint">مفتاح برو</string>
+    <string name="pro_key_ok">تم تفعيل برو لـ %1$s</string>
+    <string name="pro_key_bad">هذا المفتاح غير صالح</string>
+    <string name="save">حفظ</string>
+
+    <string name="log_empty">ستظهر مخرجات المحرّك هنا.</string>
+</resources>

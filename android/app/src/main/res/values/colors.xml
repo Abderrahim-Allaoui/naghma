@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg">#0A0A0D</color>
+    <color name="panel">#121217</color>
+    <color name="panel2">#17171E</color>
+    <color name="line">#26262F</color>
+    <color name="text">#EDEDF2</color>
+    <color name="muted">#9C9CAC</color>
+    <color name="violet">#7C3AED</color>
+    <color name="violet_dark">#3B1D75</color>
+    <color name="pink">#DB2777</color>
+    <color name="green">#4ADE80</color>
+    <color name="white">#FFFFFF</color>
+</resources>

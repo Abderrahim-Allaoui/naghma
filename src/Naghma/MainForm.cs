@@ -35,6 +35,13 @@ public sealed class MainForm : Form
     private readonly ProgressBar _progress = new();
     private readonly RichTextBox _log = new();
 
+    // ad banner (free users only; hidden when Pro is active)
+    private readonly Panel _ads = new();
+    private readonly Label _adsTag = new();
+    private readonly Label _adsBody = new();
+    private readonly LinkLabel _adsLink = new();
+    private const int AdsHeight = 80;
+
     // sites tab
     private readonly TextBox _filter = new();
     private readonly Label _countLabel = new();
@@ -171,10 +178,34 @@ public sealed class MainForm : Form
         _log.Font = new Font("Consolas", 9f);
         _log.ScrollBars = RichTextBoxScrollBars.Vertical;
 
+        // ad banner (free users only)
+        _ads.BorderStyle = BorderStyle.FixedSingle;
+        _ads.Padding = new Padding(10);
+        _adsTag.Text = "Advertisement";
+        _adsTag.Font = new Font("Segoe UI", 7.5f);
+        _adsTag.ForeColor = Theme.Muted;
+        _adsBody.Text = Loc.T("ads.body");
+        _adsBody.Font = new Font("Segoe UI", 9.5f, FontStyle.Bold);
+        _adsLink.Text = Loc.T("ads.cta");
+        _adsLink.Font = new Font("Segoe UI", 9f, FontStyle.Bold);
+        _adsLink.LinkColor = Theme.Accent;
+        _adsLink.ActiveLinkColor = Theme.Accent;
+        _adsLink.LinkBehavior = LinkBehavior.HoverUnderline;
+        _adsLink.Click += (_, _) =>
+        {
+            var url = _settings.ProUrl;
+            if (!string.IsNullOrWhiteSpace(url))
+            {
+                try { Process.Start(new ProcessStartInfo(url) { UseShellExecute = true }); } catch { }
+            }
+        };
+
+        _ads.Controls.AddRange(new Control[] { _adsTag, _adsBody, _adsLink });
+
         _tabDownload.Controls.AddRange(new Control[]
         {
             _inputLabel, _input, _formatLabel, _format, _outputLabel, _output, _browse,
-            _playlist, _resultLabel, _resultIndex, _download, _stop, _open, _update, _progress, _log,
+            _playlist, _resultLabel, _resultIndex, _download, _stop, _open, _update, _progress, _log, _ads,
         });
 
         _inputLabel.Text = Loc.T("lbl.input");
@@ -428,8 +459,22 @@ public sealed class MainForm : Form
         _open.SetBounds(pad + 576, 176, 140, 30);
         _update.SetBounds(w - pad - 150, 176, 150, 30);
 
+        var adsShow = !License.IsPro;
+        _ads.Visible = adsShow;
+        var adsArea = adsShow ? AdsHeight + pad : 0;
+
         _progress.SetBounds(pad, 218, Math.Max(200, w - 2 * pad), 12);
-        _log.SetBounds(pad, 240, Math.Max(200, w - 2 * pad), Math.Max(80, h - 252));
+        _log.SetBounds(pad, 240, Math.Max(200, w - 2 * pad), Math.Max(80, h - 252 - adsArea));
+
+        // ad banner inside the panel's client area
+        if (adsShow)
+        {
+            _ads.SetBounds(pad, h - AdsHeight - pad, Math.Max(200, w - 2 * pad), AdsHeight);
+            var aw = _ads.Width - 2 * _ads.Padding.Left;
+            _adsTag.SetBounds(0, 8, Math.Min(130, aw), 14);
+            _adsBody.SetBounds(0, 26, aw, 30);
+            _adsLink.SetBounds(Math.Max(0, aw - 150), 52, 140, 22);
+        }
 
         // sites
         var sw = _tabSites.ClientSize.Width;
@@ -734,6 +779,7 @@ public sealed class MainForm : Form
             _playlist.Enabled = true;
             _organize.Enabled = true;
             SetStatus(Loc.T("pro.thanks"));
+            LayoutAll();
         }
         else
         {

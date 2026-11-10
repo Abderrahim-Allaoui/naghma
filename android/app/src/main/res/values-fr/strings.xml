@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tagline">Collez un lien ou tapez un titre</string>
+    <string name="hint_input">Lien ou titre — un par ligne</string>
+    <string name="format">Format</string>
+    <string name="download">Télécharger</string>
+    <string name="stop">Arrêter</string>
+    <string name="ready">Prêt</string>
+    <string name="preparing">Préparation du moteur…</string>
+    <string name="downloading">Téléchargement…</string>
+    <string name="done">Terminé — %1$s</string>
+    <string name="open">Ouvrir</string>
+    <string name="share">Partager</string>
+
+    <string name="pro_title">Naghma Pro</string>
+    <string name="pro_sub">File d\'attente · FLAC et 4K · rangement auto · sans pub</string>
+    <string name="pro_watch">Voir une pub — 24 h Pro</string>
+    <string name="pro_buy">Acheter Pro — 6 $</string>
+    <string name="pro_active">Pro actif</string>
+    <string name="pro_reward_ok">Pro activé pour 24 heures. Merci !</string>
+    <string name="pro_reward_failed">Aucune pub disponible. Réessayez dans une minute.</string>
+    <string name="pro_needs">Fonction Pro</string>
+    <string name="pro_needs_body">Regardez une courte pub pour 24 h de Pro, ou achetez une clé une seule fois.</string>
+    <string name="pro_key_hint">Clé Pro</string>
+    <string name="pro_key_ok">Pro activé pour %1$s</string>
+    <string name="pro_key_bad">Cette clé n\'est pas valide</string>
+    <string name="save">Enregistrer</string>
+
+    <string name="log_empty">La sortie du moteur apparaît ici.</string>
+</resources>

@@ -58,6 +58,9 @@
   "pro.locked": "Pro",
   "pro.thanks": "Thank you! Naghma Pro is now active.",
 
+  "ads.body": "Naghma Pro: batch queue, playlists, 4K, no ads — $6 once.",
+  "ads.cta": "Get Pro →",
+
   "set.language": "Language",
   "set.organize": "Organize as Artist/Album/01 - Title (Pro)",
   "set.dedupe": "Skip files already in the library",

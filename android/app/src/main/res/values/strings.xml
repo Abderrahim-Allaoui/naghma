@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Naghma</string>
+    <string name="tagline">Paste a link or type a song name</string>
+    <string name="hint_input">Link or song name — one per line</string>
+    <string name="format">Format</string>
+    <string name="download">Download</string>
+    <string name="stop">Stop</string>
+    <string name="ready">Ready</string>
+    <string name="preparing">Preparing engine…</string>
+    <string name="downloading">Downloading…</string>
+    <string name="done">Done — %1$s</string>
+    <string name="open">Open</string>
+    <string name="share">Share</string>
+
+    <string name="pro_title">Naghma Pro</string>
+    <string name="pro_sub">Batch queue · FLAC &amp; 4K · auto-organize · no ads</string>
+    <string name="pro_watch">Watch an ad — 24h Pro</string>
+    <string name="pro_buy">Buy Pro — $6</string>
+    <string name="pro_active">Pro active</string>
+    <string name="pro_reward_ok">Pro unlocked for 24 hours. Thank you!</string>
+    <string name="pro_reward_failed">No ad available right now. Try again in a minute.</string>
+    <string name="pro_needs">That is a Pro feature</string>
+    <string name="pro_needs_body">Watch a short ad for 24 hours of Pro, or buy a key once and keep it forever.</string>
+    <string name="pro_key_hint">Pro key</string>
+    <string name="pro_key_ok">Pro activated for %1$s</string>
+    <string name="pro_key_bad">That key is not valid</string>
+    <string name="save">Save key</string>
+
+    <string name="log_empty">Engine output shows up here.</string>
+</resources>
