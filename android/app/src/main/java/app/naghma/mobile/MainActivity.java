@@ -34,7 +34,7 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity implements Engine.Listener {
 
     private static final String AD_UNIT = "ca-app-pub-3940256099942544/5224354917"; // Google test unit
-    private static final String BUY_URL = "https://gumroad.com/l/eydroa";
+    private static final String BUY_URL = "https://gumroad.com/l/naghma-pro";
     private static final int MAX_LOG_LINES = 400;
 
     private final String[] formats = {

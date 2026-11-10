@@ -83,12 +83,11 @@ Cover art: `assets/cover.png` (1280×720), social card: `assets/og.png` (1200×6
 |---|---|
 | Name | `Naghma Pro` |
 | Price | `$6` (one-time, no "pay what you want") |
-| URL slug | `eydroa` → `https://gumroad.com/l/eydroa` (account **`allaoui67`**) |
+| URL slug | `naghma-pro` → `https://gumroad.com/l/naghma-pro` (account **`allaoui67`**) |
 
 > The **Naghma Font** product lives on a *different* account (`arendxstd.gumroad.com/l/naghma`).
-> The app product was created on `allaoui67` with the auto-generated slug `eydroa`. If you
-> change the slug to something readable, update `index.html`, `MainActivity.java` (`BUY_URL`)
-> and `docs/` together.
+> The app product is on `allaoui67`. An unpublished first draft sits at slug `eydroa` on the
+> same account — safe to delete.
 | Cover | `assets/cover.png` |
 | Summary | `Batch downloads, playlists, 4K and auto-organising for Naghma. One key, offline, lifetime.` |
 | Tags | `music`, `youtube`, `downloader`, `mp3`, `windows`, `productivity` |
@@ -97,9 +96,9 @@ Cover art: `assets/cover.png` (1280×720), social card: `assets/og.png` (1200×6
 | Content / receipt note | `Your key arrives by email within 24 h. Keep it: it works offline, forever, on every PC you own.` |
 | Refund policy | `14 days, no questions` |
 
-The "buy" button on the landing page points at `https://gumroad.com/l/eydroa` — verified 200,
-price $6. The product page still has to be **published** (it currently reads "This product is
-not currently for sale"), which is done from the edit page while logged in as `allaoui67`.
+The "buy" button on the landing page points at `https://gumroad.com/l/naghma-pro` — verified
+200, price $6, CTA "Buy this". That is the live link; the desktop app's `ProUrl` points at the
+site's pricing section instead, which is intentional.
 
 ---
 
@@ -139,8 +138,9 @@ Keep an FAQ in the repo and link it from the store page — it removes ~half the
 
 - [x] Back up `private/private-key.txt` somewhere offline (`E:\Backups\Naghma\`, fingerprint in `KEY-FINGERPRINT.txt`).
 - [x] Set `ProUrl` in `AppSettings` to the live site.
-- [x] Create the Gumroad product (`gumroad.com/l/eydroa` on `allaoui67`, $6).
-- [ ] Publish it — the page still says "not currently for sale".
+- [x] Create the Gumroad product (`gumroad.com/l/naghma-pro` on `allaoui67`, $6) and publish it.
+- [x] Landing page buy button verified: 200, $6, "Buy this".
+- [ ] Delete the unpublished draft at slug `eydroa` (same account).
 - [ ] Test one key end-to-end: issue → activate → Pro features unlocked → restart keeps Pro.
 - [ ] Bump `Version` in `Naghma.csproj`, update `CHANGELOG.md`, tag `vX.Y.Z`.
 - [ ] Put the store link in the README, the repo description and the release notes.

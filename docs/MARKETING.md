@@ -5,7 +5,7 @@ Everything below is written to be pasted as-is. The asset for every channel is
 
 Landing page: https://abderrahim-allaoui.github.io/naghma/
 Download: https://github.com/Abderrahim-Allaoui/naghma/releases/latest
-Pro ($6): https://gumroad.com/l/eydroa
+Pro ($6): https://gumroad.com/l/naghma-pro
 
 ---
 

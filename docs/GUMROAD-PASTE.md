@@ -1,15 +1,15 @@
 # Gumroad — paste-ready
 
-**Product exists:** `Naghma Pro` on the **`allaoui67`** account, slug **`eydroa`** →
-<https://gumroad.com/l/eydroa> (price $6). The account with the **Naghma Font** product
-(`arendxstd`) is a *different* account — do not look for the app there.
+**Product is live:** `Naghma Pro` on the **`allaoui67`** account, slug **`naghma-pro`** →
+<https://gumroad.com/l/naghma-pro> (price $6, CTA "Buy this", published). The account with
+the **Naghma Font** product (`arendxstd`) is a *different* account — do not look for the app
+there.
 
-Open <https://gumroad.com/products/eydroa/edit> to edit it. The remaining sections are
-the field-by-field reference for what should be on that page.
+Open <https://gumroad.com/products/naghma-pro/edit> to edit it. The remaining sections are
+the field-by-field reference for what is on that page.
 
-> The slug is the auto-generated `eydroa`. If you want a readable one, change it in the
-> edit page's **URL** field (`naghma-pro` is free on *this* account) — then update the
-> three places that link to it: `index.html`, `MainActivity.java` (`BUY_URL`), `docs/`.
+> A first draft exists at slug `eydroa` on the same account — it was never published
+> ("not currently for sale"). Delete it from the product list so it does not confuse you.
 
 ## 1. Basics
 
@@ -18,7 +18,7 @@ the field-by-field reference for what should be on that page.
 | Name | `Naghma Pro` |
 | Type | Digital product |
 | Price | `6` USD, one-time (uncheck "let customers pay what they want") |
-| URL | `eydroa` → `https://gumroad.com/l/eydroa` |
+| URL | `naghma-pro` → `https://gumroad.com/l/naghma-pro` |
 | Quantity | unlimited |
 | Duration | not applicable |
 
@@ -86,7 +86,7 @@ Batch downloads, playlists, 4K and auto-organising for Naghma. One key, offline,
 3. Paste the key in the app: **Settings → Pro → paste key** → expect `Pro activated for ...`.
 4. Email the key to the buyer (or set up the webhook later, see `docs/SELLING.md` §2).
 5. Re-check the landing page buy button resolves:
-   `https://gumroad.com/l/eydroa` → 200, price $6.
+   `https://gumroad.com/l/naghma-pro` → 200, price $6.
 
 ## 6. Do not do this
 
