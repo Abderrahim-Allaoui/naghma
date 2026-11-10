@@ -140,7 +140,13 @@ Keep an FAQ in the repo and link it from the store page — it removes ~half the
 - [x] Set `ProUrl` in `AppSettings` to the live site.
 - [x] Create the Gumroad product (`gumroad.com/l/naghma-pro` on `allaoui67`, $6) and publish it.
 - [x] Landing page buy button verified: 200, $6, "Buy this".
-- [ ] Delete the unpublished draft at slug `eydroa` (same account).
-- [ ] Test one key end-to-end: issue → activate → Pro features unlocked → restart keeps Pro.
-- [ ] Bump `Version` in `Naghma.csproj`, update `CHANGELOG.md`, tag `vX.Y.Z`.
-- [ ] Put the store link in the README, the repo description and the release notes.
+- [x] Delete the unpublished draft at slug `eydroa` (same account) — now 404.
+- [x] Key pipeline verified: `private\issue-key.ps1` → key + ledger row + delivery email, and
+      `dotnet run --project private\LicenseTool -- verify <key>` reproduces the app's check
+      (valid keys pass; tampered, truncated, unprefixed and garbage keys all fail).
+      GUI activation still needs one real purchase to confirm visually.
+- [x] Bumped `Version` to 0.1.2, rewrote `CHANGELOG.md`, tagged `v0.1.2` — CI published
+      `Naghma-win-x64.zip`; local install refreshed at `E:\Apps\Naghma`.
+- [x] Store link in the README (via the site's `#pricing` section, which holds the buy button).
+- [ ] Put the store link in the GitHub repo description and the release notes body.
+- [ ] One real $6 purchase end-to-end (100 % discount code) → key → activate in the GUI.
